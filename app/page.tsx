@@ -6,9 +6,7 @@ import FloatingClouds from './components/FloatingClouds';
 
 export default function HomePage() {
     return (
-        // <PasswordGate>
-        <>
-        <>
+        <PasswordGate>
             <nav className="navbar fixed-navbar">
                 <div className="nav-container">
                     <div className="nav-logo">🌿 Chillax Day</div>
@@ -44,8 +42,6 @@ export default function HomePage() {
                 <TeamMembers />
                 <EventSection />
             </div>
-        </>
-        </>
-        /* </PasswordGate> */
+        </PasswordGate>
     );
 }
