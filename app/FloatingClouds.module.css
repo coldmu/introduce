@@ -1,0 +1,43 @@
+.cloudContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.cloud1 {
+    position: absolute;
+    top: 20%;
+    left: -200px;
+    animation: floatCloud1 60s linear infinite;
+    opacity: 0.8;
+}
+
+.cloud2 {
+    position: absolute;
+    top: 70%;
+    right: -250px;
+    animation: floatCloud2 90s linear infinite;
+    opacity: 0.5;
+}
+
+@keyframes floatCloud1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(150vw);
+    }
+}
+
+@keyframes floatCloud2 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200vw);
+    }
+}
