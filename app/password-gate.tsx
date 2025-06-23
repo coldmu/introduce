@@ -29,9 +29,9 @@ export default function PasswordGate({ children }: { children: React.ReactNode }
             <div className="login-screen">
                 <div className="login-container">
                     <div className="login-card">
-                        <h1 className="login-title">마법의 문을 열어주세요</h1>
+                        <h1 className="login-title">초대장</h1>
                         <p className="login-subtitle">
-                            팀의 비밀스러운 세계로 들어가기 위해<br />암호를 입력해주세요
+                            비밀스러운 세계로 들어가기 위해<br />암호를 입력해주세요 <br />
                         </p>
                         <form onSubmit={handleLogin} className="login-form">
                             <input

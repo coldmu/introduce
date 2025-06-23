@@ -3,29 +3,29 @@ export default function TeamIntro() {
         <section id="team-intro" className="team-intro-section">
                 <div className="container">
                 <div className="section-header">
-                    <h2 className="section-title">우리 팀을 소개합니다</h2>
+                    <h2 className="section-title">Invitation</h2>
                     <div className="section-divider"></div>
                 </div>
                 <p className="team-description">
-                    우리는 창의성과 조화를 추구하는 디자인 팀입니다.<br />
-                    지브리의 마법같은 세계관에서 영감을 받아<br />
-                    아름다워지는 디지털 경험을 만들어갑니다.
+                일상에 작은 쉼표, 우리만의 힐링 타임! <br />
+                바쁜 하루 속, 잠시 멈춰 뮤지컬 속 감동, 깊은 명상 <br />
+                칠렉스한 분위기를 함께 즐겨보는 건 어때요?
                 </p>
                 <div className="team-values">
                     <div className="value-item">
-                        <div className="value-icon">✨</div>
-                        <h3>창의성</h3>
-                        <p>상상력을 현실로 만드는 힘</p>
+                        <div className="value-icon">🧘</div>
+                        <h3>Meditation</h3>
+                        <p>Get Rest</p>
                     </div>
                     <div className="value-item">
-                        <div className="value-icon">🤝</div>
-                        <h3>조화</h3>
-                        <p>서로 다른 재능의 아름다운 합성</p>
+                        <div className="value-icon">🌙</div>
+                        <h3>Chillax</h3>
+                        <p>Chill & Relax</p>
                     </div>
                     <div className="value-item">
-                        <div className="value-icon">💝</div>
-                        <h3>열정</h3>
-                        <p>끝없는 도전과 성장의 동력</p>
+                        <div className="value-icon">🎭</div>
+                        <h3>Musical Pub</h3>
+                        <p>Musical & Beer</p>
                     </div>
                 </div>
             </div>

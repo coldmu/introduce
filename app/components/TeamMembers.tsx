@@ -12,48 +12,24 @@ export default function TeamMembers() {
       birthDate: '1995-03-15',
       mbti: 'INFP',
       image: '/assets/kim_ghibli.png',
-      role: '프론트엔드 개발자',
-      bio: '감성적인 개발자, 하늘을 닮은 따뜻한 리더입니다.',
-      socials: {
-        github: 'https://github.com/skyhanul',
-        linkedin: 'https://linkedin.com/in/skyhanul',
-      },
     },
     {
       name: '박바람',
       birthDate: '1994-07-22',
       mbti: 'ENFJ',
       image: '/assets/na_ghibli.png',
-      role: '백엔드 개발자',
-      bio: '새로운 바람을 불어넣는 열정 백엔드 개발자.',
-      socials: {
-        github: 'https://github.com/windbaram',
-        linkedin: 'https://linkedin.com/in/windbaram',
-      },
     },
     {
       name: '이구름',
       birthDate: '1996-11-08',
       mbti: 'ESTJ',
       image: '/assets/lee_ghibli.png',
-      role: '디자이너',
-      bio: '구름처럼 자유롭게, 감각적인 디자인을 추구합니다.',
-      socials: {
-        github: 'https://github.com/cloudlee',
-        linkedin: 'https://linkedin.com/in/cloudlee',
-      },
     },
     {
       name: '정초록',
       birthDate: '1997-04-30',
       mbti: 'ISFJ',
       image: '/assets/lee_ghibli.png',
-      role: '기획자',
-      bio: '초록빛 에너지로 팀을 이끄는 든든한 기획자.',
-      socials: {
-        github: 'https://github.com/greenjung',
-        linkedin: 'https://linkedin.com/in/greenjung',
-      },
     },
   ];
 
@@ -72,7 +48,7 @@ export default function TeamMembers() {
       <section id="team-members" className="team-members-section">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">팀원들을 만나보세요</h2>
+            <h2 className="section-title">Special Guests</h2>
             <div className="section-divider"></div>
           </div>
           <div className="members-grid">
