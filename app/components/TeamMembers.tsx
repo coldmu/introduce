@@ -11,25 +11,25 @@ export default function TeamMembers() {
       name: '김하늘',
       birthDate: '1995-03-15',
       mbti: 'INFP',
-      image: '/assets/kim_ghibli.png',
+      image: '/invitation/assets/kim_ghibli.png',
     },
     {
       name: '박바람',
       birthDate: '1994-07-22',
       mbti: 'ENFJ',
-      image: '/assets/na_ghibli.png',
+      image: '/invitation/assets/na_ghibli.png',
     },
     {
       name: '이구름',
       birthDate: '1996-11-08',
       mbti: 'ESTJ',
-      image: '/assets/lee_ghibli.png',
+      image: '/invitation/assets/lee_ghibli.png',
     },
     {
       name: '정초록',
       birthDate: '1997-04-30',
       mbti: 'ISFJ',
-      image: '/assets/lee_ghibli.png',
+      image: '/invitation/assets/lee_ghibli.png',
     },
   ];
 
