@@ -55,8 +55,7 @@ const ScheduleDetailModal: React.FC<ScheduleDetailModalProps> = ({ time, title, 
       style={{ inset: 0, background: 'rgba(0,0,0,0.7)', backgroundColor: 'rgba(0,0,0,0.7)' }}
     >
       <div
-        className="modal-card animate-zoomIn flex flex-col relative bg-white rounded-xl shadow-xl max-h-[80vh] overflow-y-auto custom-scrollbar" style={{ width: '30vw', maxWidth: 1152, minWidth: 800 }}
-        onClick={handleContentClick}
+        className="modal-card animate-zoomIn flex flex-col relative bg-white rounded-xl shadow-xl max-h-[80vh] overflow-y-auto custom-scrollbar" style={{ width: '60vw', maxWidth: 800, minWidth: 330 }}        onClick={handleContentClick}
       >
         {/* Close Button */}
         <button
@@ -104,20 +103,16 @@ const ScheduleDetailModal: React.FC<ScheduleDetailModalProps> = ({ time, title, 
               ) : (
                 <div key={idx} className="w-full flex justify-center mt-8 mb-8">
                   <div
-                    className="relative flex-shrink-0 flex items-center justify-center"
-                    style={{
-                      minWidth: block.width ? block.width : 160,
-                      width: block.width ? block.width : 240,
-                      height: block.height ? block.height : 160,
-                    }}
+                    className="relative flex-shrink-0 flex items-center justify-center w-[80vw] max-w-[500px] min-w-[200px] sm:w-[95vw] sm:max-w-[95vw]"
+                    style={{ width: '55vw', maxWidth: 800, minWidth: 200 }}
                   >
                     <Image
                       src={block.content}
                       alt={title + ' 이미지 ' + (idx + 1)}
-                      width={block.width || 240}
-                      height={block.height || 160}
-                      style={{ objectFit: 'cover', width: '100%', height: '100%', borderRadius: 12, zIndex: 1, position: 'relative' }}
-                      className="border border-white/70 shadow-lg rounded-xl"
+                      width={block.width || 800}
+                      height={block.height || 600}
+                      style={{ objectFit: 'cover', width: '100%', height: 'auto', borderRadius: 12, zIndex: 1, position: 'relative' }}
+                      className="border border-white/70 shadow-lg rounded-xl w-full h-auto max-w-full max-h-[60vh]"
                       priority={idx === 0}
                     />
                   </div>

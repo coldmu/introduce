@@ -37,7 +37,8 @@ const ImageModal: React.FC<ImageModalProps> = ({ member, onClose }) => {
   };
 
   console.log('[DEBUG] ImageModal rendered', member);
-  const modalContent = (
+  if (typeof window === 'undefined') return null;
+  return ReactDOM.createPortal(
     <div
       className="fixed inset-0 z-[1001] flex items-center justify-center bg-black/70 backdrop-blur-sm animate-fadeIn"
       role="dialog"
@@ -48,8 +49,9 @@ const ImageModal: React.FC<ImageModalProps> = ({ member, onClose }) => {
     >
       {/* Modal Card */}
       <div
-        className="modal-card animate-zoomIn flex flex-col"
+        className="modal-card animate-zoomIn flex flex-col w-[90vw] max-w-[900px] sm:w-[98vw] sm:max-w-[98vw]"
         onClick={handleContentClick}
+        style={{ width: '80vw', maxWidth: 800, minWidth: 200 }}
       >
         {/* Glassy Close Button */}
         <button
@@ -64,37 +66,36 @@ const ImageModal: React.FC<ImageModalProps> = ({ member, onClose }) => {
         </button>
         {/* Image Area with Gradient Ring */}
         <div className="modal-section flex flex-col items-center justify-center pt-10 pb-3 px-8 bg-gradient-to-b from-blue-100/60 to-transparent">
-          <div className="relative w-52 h-64 mb-3 flex items-center justify-center">
-  <Image
-    src={member.image}
-    alt={member.name}
-    width={220}
-    height={280}
-    style={{ objectFit: 'contain', width: '100%', height: '100%', zIndex: 1, position: 'relative', borderRadius: 0 }}
-    className="border border-white/70 shadow-lg"
-    priority
-  />
-</div>
+          <div className="relative w-[78vw] max-w-[700px] aspect-[4/5] mb-3 flex items-center justify-center">
+            <Image
+              src={member.fullImage}
+              alt={member.name}
+              width={1200}
+              height={1500}
+              className="rounded-2xl mx-auto shadow-xl w-full h-full"
+              style={{ objectFit: 'contain' }}
+              priority
+            />
+          </div>
         </div>
         {/* Profile Details */}
         <div className="flex flex-col items-center px-8 py-6 text-gray-900">
           <h2 className="text-2xl sm:text-3xl font-extrabold mb-1 tracking-tight text-gray-900 drop-shadow">{member.name}</h2>
           <div className="profile-badges mb-4">
-  <div className="profile-badge profile-badge--mbti">
-    <FaUserAstronaut className="profile-badge__icon profile-badge__icon--mbti" />
-    <span className="profile-badge__text">{member.mbti}</span>
-  </div>
-  <div className="profile-badge profile-badge--birth">
-    <FaCalendarAlt className="profile-badge__icon profile-badge__icon--birth" />
-    <span className="profile-badge__text">{member.birthDate}</span>
-  </div>
-</div>
+            <div className="profile-badge profile-badge--mbti">
+              <FaUserAstronaut className="profile-badge__icon profile-badge__icon--mbti" />
+              <span className="profile-badge__text">{member.mbti}</span>
+            </div>
+            <div className="profile-badge profile-badge--birth">
+              <FaCalendarAlt className="profile-badge__icon profile-badge__icon--birth" />
+              <span className="profile-badge__text">{member.birthDate}</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
-  if (typeof window === 'undefined') return null;
-  return ReactDOM.createPortal(modalContent, document.body);
 };
 
 export default ImageModal;

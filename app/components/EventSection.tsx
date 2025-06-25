@@ -8,7 +8,7 @@ const scheduleData = [
     title: '명상 프로그램 - 마음 거울 사용법',
     summary: '간단한 스트레스 체크 및 복식호흡을 통한 마음 정돈하기',
     details: [
-      { type: 'image' as const, content: '/invitation/images/schedule/event1.png', width: 400, height: 500 },
+      { type: 'image' as const, content: '/invitation/images/schedule/event1.png'},
       { type: 'text' as const, content: '★ 간단한 스트레스 체크' },
       { type: 'text' as const, content: '★ 내 마음속 생각과 감정 알아차리기' },
       { type: 'text' as const, content: '★ 복식호흡을 통한 마음 정돈하기' },
@@ -42,7 +42,7 @@ const scheduleData = [
       { type: 'image' as const, content: '/invitation/images/schedule/fiveguys.png', width: 600, height: 400 },
       { type: 'text' as const, content: '서울 서초구 강남대로 435 주류성빌딩 1층, 2층' },
       { type: 'text' as const, content: 'https://naver.me/GHvq56bs' },
-      { type: 'image' as const, content: '/invitation/images/schedule/fiveguys2.jpeg', width: 600, height: 800 },
+      { type: 'image' as const, content: '/invitation/images/schedule/fiveguys2.jpeg'},
       { type: 'text' as const, content: '강남역 도착 후, 파이브가이즈에서 파이즈가이즈 버거, 감자튀김, 땅콩, 맥주/밀크쉐이크로 든든하게! 자유로운 휴식 타임 🍔🍟' },
       { type: 'text' as const, content: '★☆★ 메뉴는 미리미리 생각해주세요! 토핑을 뭐 넣어야할지잘 모르시겠으면 "올더웨이!" 를 외쳐주시면 됩니다! ★☆★' },
     ],
@@ -61,6 +61,15 @@ const scheduleData = [
       { type: 'image' as const, content: '/invitation/images/schedule/pub4.jpeg', width: 400, height: 600 },
       { type: 'image' as const, content: '/invitation/images/schedule/pub5.jpeg', width: 400, height: 600 },
       { type: 'image' as const, content: '/invitation/images/schedule/pub6.jpeg', width: 600, height: 500 },
+    ],
+  },
+  {
+    time: '???',
+    title: 'Special Event',
+    summary: '깜짝 이벤트가 예정되어 있습니다',
+    details: [
+      { type: 'image' as const, content: '/invitation/images/schedule/present.jpg', width: 600, height: 600 },
+      { type: 'text' as const, content: '깜짝 선물이 준비되어 있으니 기대해주세요😍' },
     ],
   },
 ];

@@ -8,28 +8,138 @@ import ImageModal from './ImageModal';
 export default function TeamMembers() {
   const members: TeamMember[] = [
     {
-      name: '김하늘',
-      birthDate: '1995-03-15',
-      mbti: 'INFP',
-      image: '/invitation/assets/kim_ghibli.png',
+      name: '이하준',
+      birthDate: '01/05',
+      mbti: 'INFJ',
+      thumbnail: '/invitation/assets/1t.png',
+      fullImage: '/invitation/assets/1.png',
     },
     {
-      name: '박바람',
-      birthDate: '1994-07-22',
-      mbti: 'ENFJ',
-      image: '/invitation/assets/na_ghibli.png',
+      name: '김서윤',
+      birthDate: '11/02',
+      mbti: 'INTP',
+      thumbnail: '/invitation/assets/2t.png',
+      fullImage: '/invitation/assets/2.png',
     },
+    
     {
-      name: '이구름',
-      birthDate: '1996-11-08',
+      name: '박민석',
+      birthDate: '01/22',
       mbti: 'ESTJ',
-      image: '/invitation/assets/lee_ghibli.png',
+      thumbnail: '/invitation/assets/6t.png',
+      fullImage: '/invitation/assets/6.png',
+    },
+    {
+      name: '최다은',
+      birthDate: '10/26',
+      mbti: 'ENTJ',
+      thumbnail: '/invitation/assets/7t.png',
+      fullImage: '/invitation/assets/7.png',
+    },
+    {
+      name: '정도윤',
+      birthDate: '03/19',
+      mbti: 'ENTJ',
+      thumbnail: '/invitation/assets/8t.png',
+      fullImage: '/invitation/assets/8.png',
+    },
+    {
+      name: '박예진',
+      birthDate: '01/19',
+      mbti: 'ENFJ',
+      thumbnail: '/invitation/assets/4t.png',
+      fullImage: '/invitation/assets/4.png',
+    },
+    {
+      name: '백건우',
+      birthDate: '04/30',
+      mbti: 'ESTJ',
+      thumbnail: '/invitation/assets/17t.png',
+      fullImage: '/invitation/assets/17.png',
+    },
+    {
+      name: '윤지안',
+      birthDate: '02/02',
+      mbti: 'ESFJ',
+      thumbnail: '/invitation/assets/9t.png',
+      fullImage: '/invitation/assets/9.png',
+    },
+    {
+      name: '최태경',
+      birthDate: '09/20',
+      mbti: 'ENTJ',
+      thumbnail: '/invitation/assets/10t.png',
+      fullImage: '/invitation/assets/10.png',
+    },
+    {
+      name: '이하린',
+      birthDate: '11/19',
+      mbti: 'ISTJ',
+      thumbnail: '/invitation/assets/11t.png',
+      fullImage: '/invitation/assets/11.png',
+    },
+    {
+      name: '한현우',
+      birthDate: '12/09',
+      mbti: 'ESTJ',
+      thumbnail: '/invitation/assets/12t.png',
+      fullImage: '/invitation/assets/12.png',
+    },
+    {
+      name: '장이안',
+      birthDate: '07/31',
+      mbti: 'ENTP',
+      thumbnail: '/invitation/assets/16t.png',
+      fullImage: '/invitation/assets/16.png',
+    },
+    {
+      name: '정수아',
+      birthDate: '01/08',
+      mbti: 'ESFJ',
+      thumbnail: '/invitation/assets/5t.png',
+      fullImage: '/invitation/assets/5.png',
+    },
+    {
+      name: '서지우',
+      birthDate: '05/16',
+      mbti: 'ESTJ',
+      thumbnail: '/invitation/assets/13t.png',
+      fullImage: '/invitation/assets/13.png',
+    },
+    {
+      name: '오유찬',
+      birthDate: '11/21',
+      mbti: 'ISTP',
+      thumbnail: '/invitation/assets/14t.png',
+      fullImage: '/invitation/assets/14.png',
+    },
+    {
+      name: '류성현',
+      birthDate: '02/07',
+      mbti: 'ISTJ',
+      thumbnail: '/invitation/assets/15t.png',
+      fullImage: '/invitation/assets/15.png',
+    },
+    {
+      name: '나구름',
+      birthDate: '06/02',
+      mbti: 'ENTP',
+      thumbnail: '/invitation/assets/18t.png',
+      fullImage: '/invitation/assets/18.png',
     },
     {
       name: '정초록',
-      birthDate: '1997-04-30',
-      mbti: 'ISFJ',
-      image: '/invitation/assets/lee_ghibli.png',
+      birthDate: '12/28',
+      mbti: 'ISTJ',
+      thumbnail: '/invitation/assets/19t.png',
+      fullImage: '/invitation/assets/19.png',
+    },
+    {
+      name: '김지호',
+      birthDate: '12/20',
+      mbti: 'INTJ',
+      thumbnail: '/invitation/assets/3t.png',
+      fullImage: '/invitation/assets/3.png',
     },
   ];
 
@@ -61,7 +171,7 @@ export default function TeamMembers() {
                 <div className="member-image relative w-full h-72 overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30 z-10"></div>
                   <Image
-                    src={member.image}
+                    src={member.thumbnail}
                     alt={member.name}
                     fill
                     style={{ objectFit: 'cover' }}
